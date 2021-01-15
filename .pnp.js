@@ -42,7 +42,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.12.11"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["babel-loader", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:8.2.2"],
-            ["copy-webpack-plugin", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.0.0"],
             ["core-js", "npm:3.8.2"],
             ["css-loader", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:5.0.1"],
             ["eslint", "npm:7.17.0"],
@@ -3176,7 +3175,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.12.11"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["babel-loader", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:8.2.2"],
-            ["copy-webpack-plugin", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.0.0"],
             ["core-js", "npm:3.8.2"],
             ["css-loader", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:5.0.1"],
             ["eslint", "npm:7.17.0"],
@@ -4565,36 +4563,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/copy-descriptor-npm-0.1.1-864db4ab66-c052cf571f.zip/node_modules/copy-descriptor/",
           "packageDependencies": [
             ["copy-descriptor", "npm:0.1.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["copy-webpack-plugin", [
-        ["npm:7.0.0", {
-          "packageLocation": "./.yarn/cache/copy-webpack-plugin-npm-7.0.0-f0173c9736-2884a96ba6.zip/node_modules/copy-webpack-plugin/",
-          "packageDependencies": [
-            ["copy-webpack-plugin", "npm:7.0.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.0.0", {
-          "packageLocation": "./.yarn/$$virtual/copy-webpack-plugin-virtual-b8d0d2ed1a/0/cache/copy-webpack-plugin-npm-7.0.0-f0173c9736-2884a96ba6.zip/node_modules/copy-webpack-plugin/",
-          "packageDependencies": [
-            ["copy-webpack-plugin", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:7.0.0"],
-            ["@types/webpack", null],
-            ["fast-glob", "npm:3.2.4"],
-            ["glob-parent", "npm:5.1.1"],
-            ["globby", "npm:11.0.2"],
-            ["loader-utils", "npm:2.0.0"],
-            ["normalize-path", "npm:3.0.0"],
-            ["p-limit", "npm:3.1.0"],
-            ["schema-utils", "npm:3.0.0"],
-            ["serialize-javascript", "npm:5.0.1"],
-            ["webpack", "virtual:a936245e7448382fb65333dc268bb6096480d3b04a098aa512e33c3b6bf9de8caffbf1c64cb99d0bc6a92996bb76b89badac302e5c9c4ec02606f7e60a13b913#npm:5.11.1"]
-          ],
-          "packagePeers": [
-            "@types/webpack",
-            "webpack"
           ],
           "linkType": "HARD",
         }]

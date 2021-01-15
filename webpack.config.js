@@ -2,14 +2,16 @@
 
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: argv.mode === 'development' ? '/' : '/Tasks',
   },
-  entry: './js/app.js',
+  entry: [
+    './js/app.js',
+    './css/style.css',
+  ],
   module: {
     rules: [
       {
@@ -27,18 +29,33 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: { injectType: 'linkTag' },
+          },
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(png|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
-    }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'img' },
-        { from: 'css' },
-      ],
+      favicon: './img/favicon.ico',
     }),
   ],
-};
+});
