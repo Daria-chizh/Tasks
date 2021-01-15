@@ -6,7 +6,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: argv.mode === 'development' ? '/' : '/Tasks',
+    publicPath: argv.mode === 'development' ? '/' : '/Tasks/',
   },
   entry: [
     './js/app.js',
